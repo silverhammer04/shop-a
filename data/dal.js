@@ -91,7 +91,7 @@ const deleteItem = (id) => {
   return iou;
 };
 module.exports = {
-    creatItem,
+    createItem,
     readItem,
     upcertItem,
     deleteItem

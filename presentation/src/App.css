@@ -1,3 +1,48 @@
+ul{
+  list-style: none;
+}
+
+.card-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: .25rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+  background-color: rgb(66, 65, 16);
+  transform-style: preserve-3d;
+  height: 150px;
+  cursor: pointer;
+}
+
+.card:hover {
+  --translate-y: -5px;
+  box-shadow: 00 5px 2px rgba(0, 0, 0, .5);
+}
+
+.CreateForm{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px 40%;
+  margin-right: 75%;
+}
+
+.EdtBtn{
+  margin-right: 5px;
+  color: rgb(8, 140, 145);
+}
+
+i:hover {
+  background-color: rgb(226, 247, 170)
+}
+
 .App {
   text-align: center;
 }
@@ -7,32 +52,14 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
+  margin-left: 40px;
 }
 
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  background-color: #282c34;  
 }
